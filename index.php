@@ -63,7 +63,7 @@
 											<form action="conexion/login.php" method="post" id="formlg">
 												<center><span class="icon fa fa-user fa-5x"></span></center>
 												<p>Username<input type="text" placeholder="User" name="userlg" required/></p>
-												<p>Password<input type="password" placeholder="Password" name="passwordlg" required/></p>
+												<p>Password2020<input type="password" placeholder="Password" name="passwordlg" required/></p>
 												<p><center><input type="submit" value="Ingresar"/></input></center>
 											</form>
 										</center>
