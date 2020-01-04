@@ -55,8 +55,7 @@ class ConexionDB extends mysqli{
 
 	public function modificar($sql){}
 
-
-	function cerrar() {
+	public function cerrar() {
 		$this->con->close();
 	}
 }
