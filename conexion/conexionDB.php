@@ -1,10 +1,10 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 //eader("Content-Type: text/html;charset=utf-8"); 
-mysql_query("SET NAMES 'utf8'");
+//mysql_query("SET NAMES 'utf8'");
 
-class ConexionDB extends mysqli{
-//class ConexionDB{
+//class ConexionDB extends mysqli{
+class ConexionDB{
 	
 	private $con;
 	private $host = "localhost";
