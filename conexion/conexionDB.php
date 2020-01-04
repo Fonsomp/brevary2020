@@ -8,9 +8,13 @@ class ConexionDB extends mysqli{
 	
 	private $con;
 	private $host = "localhost";
-	private $user = 'root';
+	/*private $user = 'root';
 	private $password = '9876';
-	private $db = 'pruebabrevario';
+	private $db = 'pruebabrevario';*/
+
+	private $user = 'u842777312_rfonseca';
+	private $password = 'Tpm?c$*b/a';
+	private $db = 'u842777312_pruebabrevario';
 
 	public function __construct(){
 		/*parent:: __construct($this->host, $this->user, $this->password, $this->db);
