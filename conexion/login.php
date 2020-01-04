@@ -2,10 +2,11 @@
 session_start();
 require_once("conexionDB.php");
 
-$userlg = $_POST['userlg'];
-$passwordlg = $_POST['passwordlg'];
+echo $userlg = $_POST['userlg'];
+echo $passwordlg = $_POST['passwordlg'];
 
 $objConexion = new ConexionDB();
+
 
 $sql = "SELECT * FROM users WHERE user='$userlg'";
 $row = $objConexion->consulta($sql);
