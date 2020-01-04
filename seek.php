@@ -7,7 +7,7 @@
 
 	$dateLiturgia = $_POST['dateLiturgia'];
 	$type = $_POST['brevaryDB'];//Envia a la base datos de acuerdo a la oracion que corresponda
-	echo $oracion = $_POST['tipo'];//Menu principal
+	$oracion = $_POST['tipo'];//Menu principal
 	$language = $_SESSION["language"]; 
 
 	if($_POST['tipoS'] == "Hora Intermedia"){

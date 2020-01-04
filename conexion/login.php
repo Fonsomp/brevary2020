@@ -2,8 +2,8 @@
 session_start();
 require_once("conexionDB.php");
 
-echo $userlg = $_POST['userlg'];
-echo $passwordlg = $_POST['passwordlg'];
+$userlg = $_POST['userlg'];
+$passwordlg = $_POST['passwordlg'];
 
 $objConexion = new ConexionDB();
 
