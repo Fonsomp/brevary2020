@@ -7,8 +7,8 @@
 class ConexionDB{
 	
 	private $con;
-	private $host = "localhost";
-	/*private $user = 'root';
+	/*private $host = "localhost";
+	private $user = 'root';
 	private $password = '9876';
 	private $db = 'pruebabrevario';*/
 

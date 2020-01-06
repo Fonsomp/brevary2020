@@ -370,7 +370,12 @@
  							</div>
 						</div>
 					</section>
-					
+					<!-- Footer -->
+					<div class="derechos">
+						<footer>
+							<center><span>Diseño y Desarrollo por <img src="images/Logo.png" width="4%" height="4%"></span></center>
+						</footer>
+					</div>
 				</div>
 			</div>
 			<!-- Sidebar -->
@@ -396,18 +401,17 @@
 					</nav>													
 
 							<!-- Section -->
-								<section>
-									
+							<section>
 									<ul class="contact">
-										<li><img src="images/EscudoAR.png" width="80%" height="80%"></li>
-										<li onclick="gps()" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><img id="flag" src="images/Interrogacion.png" width="20" height="20"/></li>
-									    <li id="flag"></li>
+										<li><img src="images/EscudoAR.png"></li>
+										<li onclick="gps();" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><span id="flag"></span></li>
+										<!--<li id="flag"></li>-->
 									</ul>
 								</section>
 
 							<!-- Footer -->
-								<footer id="footer">
-									
+								<footer class = "copy">
+									<center><span>Todos los derechos reservados &copy; 2020</span></center>
 								</footer>
 
 						</div>

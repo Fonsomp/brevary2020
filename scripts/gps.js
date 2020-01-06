@@ -10,10 +10,11 @@ function gps(){
 				var lat = objPosition.coords.latitude;
 
 				//content.innerHTML = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>";
-				content.innerHTML = "<p><strong>Colombia </strong></p>";
+				//content.innerHTML = "<p><strong>Colombiar</strong></p>";
 													
 				if(lat > 4 && lon < -74){
-					 document.getElementById("flag").innerHTML = "<img src='images/Colombia-Flag-icon.png' width='30' height='30'/>";
+					content.innerHTML = "<p><strong>Colombia&nbsp;&nbsp;&nbsp;</strong><img src='images/Colombia-Flag-icon.png' width='25' height='25'/></p>";
+					// document.getElementById("flag").innerHTML = "<img src='images/Colombia-Flag-icon.png' width='30' height='30'/>";
 													}
 
 												}, function(objPositionError)
@@ -43,7 +44,8 @@ function gps(){
 											}
 										}
 
-var content = document.getElementById("geolocation-test");
+//Descomentar todo lo que esta abajo para que sea automatica la geolocalizacion.
+/*var content = document.getElementById("geolocation-test");
 										
 	if (navigator.geolocation){
 												
@@ -83,4 +85,4 @@ var content = document.getElementById("geolocation-test");
 											else
 											{
 												content.innerHTML = "Su navegador no soporta la API de geolocalización.";
-											}
+											}*/

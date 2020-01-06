@@ -70,9 +70,15 @@
 										</div>
 									</div>
 								</section>
+								<!-- Footer -->
+								<div class="derechos">
+									<footer>
+										<center><span>Diseño y Desarrollo por <img src="images/Logo.png" width="4%" height="4%"></span></center>
+									</footer>
+								</div>
+										
 						</div>
 					</div>
-
 				<!-- Sidebar -->
 					<div id="sidebar" ng-controller="mainCtrl">
 						<div class="inner"  ng-controller="mainCtrl">
@@ -95,22 +101,22 @@
 										<li onclick="viewFiles()"><a href="#"><?php echo $btbiblioteca; ?></a></li>
 										<li onclick="viewNotifications();"><a href="#"><?php echo $btnotificaciones; ?></a></li>
 										<li onclick="viewLogin();"><a href=""><?php echo $btIngresar; ?></a></li>
+										<li onclick=""><a href="">Acerca de</a></li>
 									</ul>
 								</nav>						
 
 							<!-- Section -->
 								<section>
-
 									<ul class="contact">
-										<li><img src="images/EscudoAR.png" width="80%" height="80%"></li>
-										<li onclick="gps();" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><img src="images/Interrogacion.png" width="20" height="20" id="flag" /></li>
-										<li id="flag"></li>
+										<li><img src="images/EscudoAR.png"></li>
+										<li onclick="gps();" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><span id="flag"></span></li>
+										<!--<li id="flag"></li>-->
 									</ul>
 								</section>
 
 							<!-- Footer -->
-								<footer id="footer">
-									
+								<footer class = "copy">
+									<center><span>Todos los derechos reservados &copy; 2020</span></center>
 								</footer>
 
 						</div>

@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	//error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 	require_once("conexion/conexionDB.php");
 	require 'Language/requiereLenguage.php';
 	require 'listFiles.php';
@@ -408,6 +408,12 @@
 
 						</div>
 					</section>
+					<!-- Footer -->
+					<div class="derechos">
+						<footer>
+							<center><span>Diseño y Desarrollo por <img src="images/Logo.png" width="4%" height="4%"></span></center>
+						</footer>
+					</div>
 					
 				</div>
 			</div>
@@ -426,26 +432,25 @@
 							<h2><?php echo $menu; ?></h2>
 						</header>
 						<ul >
-							<li><a href="controlPanel.php">Liturgias</a></li>
-							<li onclick="viewNotificacion()"><a href="">Notificaciones</a></li>
-							<li onclick="viewUpFiles()"><a href="">Subir Archivos</a></li>
-							<li><a href="index.php">Salir</a></li>
+							<li><a href="controlPanel.php"><?php echo $btLitugias; ?></a></li>
+							<li onclick="viewNotificacion()"><a href=""><?php echo $btnotificaciones; ?></a></li>
+							<li onclick="viewUpFiles()"><a href=""><?php echo $btSubirArchivos; ?></a></li>
+							<li><a href="index.php"><?php echo $btSalir; ?></a></li>
 						</ul>
 					</nav>													
 
 							<!-- Section -->
-								<section>
-									
+							<section>
 									<ul class="contact">
-										<!--<li><img src="images/EscudoAR.png" width="80%" height="80%"></li>-->
-										<li onclick="gps();" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><img src="images/Interrogacion.png" width="20" height="20" id="flag" /></li>
-									    <li id="flag"></li>
+										<li><img></li>
+										<li onclick="gps();" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><span id="flag"></span></li>
+										<!--<li id="flag"></li>-->
 									</ul>
 								</section>
 
 							<!-- Footer -->
-								<footer id="footer">
-									
+								<footer class = "copy">
+									<center><span>Todos los derechos reservados &copy; 2020</span></center>
 								</footer>
 
 						</div>
@@ -453,7 +458,7 @@
 
 			</div>
 		<!-- Scripts -->
-		<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/lib/angular.min.js"></script>	
