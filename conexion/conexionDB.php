@@ -31,6 +31,16 @@ class ConexionDB{
     		exit();}
 	}
 
+	//funcion que busca y retorna el numero de regsitros encontrados
+	public function buscar($sql){
+		$result = $this->con->query($sql) or die($this->con->error);
+		if($result){
+			$row_cnt = $result->num_rows;
+			return $row_cnt;
+		}
+	}
+
+	//Funcion que retonar la consulta en un arreglo asociativo
 	public function consulta($sql){
 		$result = $this->con->query($sql) or die($this->con->error);
 		//Si la consulta es exitosa regresa un array asociativo
@@ -39,7 +49,19 @@ class ConexionDB{
         return false;
 	}
 
-	public function contar_filas($sql){
+	//Funcion que inserta datos en la DB
+	public function insertar($sql){
+		$result = $this->con->query($sql) or die($this->con->error);
+	}
+
+	public function modificar($sql){}
+
+	public function cerrar() {
+		$this->con->close();
+		return print("Se cerro correctamente la consulta");
+	}
+
+	/*public function contar_filas($sql){
 		$result = $this->con->query($sql) or die($this->con->error);
 		if($result){
 			$row_cnt = $result->num_rows;
@@ -51,12 +73,12 @@ class ConexionDB{
 			window.location='controlPanel.php';
 			</script>");
 		}
-	}
+	}*/
 
-	public function modificar($sql){}
+	
 
-	public function cerrar() {
-		$this->con->close();
-	}
+	
+
+	
 }
 ?>

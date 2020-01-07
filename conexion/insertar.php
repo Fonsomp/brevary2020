@@ -34,106 +34,106 @@ $objConexion = new ConexionDB();
 	switch ($oracion) {
 		case 'Breviario':
 			//Selecciona la DB brevario para verificar si exite o no el registro
-			$result = mysql_query("SELECT * FROM Breviario WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
-			$registros = mysql_num_rows($result);
-
-			if($registros == 0){//Si no encuentra resultados, ingresa los datos
+			$sql = "SELECT * FROM Breviario WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
+			$objConexion->buscar($sql);
+			if ($objConexion->buscar($sql) == 0){
+				//echo "Por fin funciono";
 				$sql = "INSERT INTO Breviario(DateLiturgia,TextB,Type,SubType,Language) VALUES('$dateLiturgia','$txa','$type','$subtype','$language')";
-				$objConexion->execute($sql);
+				$objConexion->insertar($sql);
+				$objConexion->cerrar();
 				echo "<script>
 				alert('Los datos fueron enviados correctamente a ".$type."');
 				window.location='../controlPanel.php';
 				</script>";
-				$objConexion->cerrar();}
+				}
 			else{
+				$objConexion->cerrar();
 				echo "<script>
 				alert('El registro ya existe en ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}	
+				</script>";}
 		break;
 		case 'Misal':
-			$result = mysql_query("SELECT * FROM Misal WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
-			$registros = mysql_num_rows($result);
-
-			if($registros == 0){//Si no encuentra resultados, ingresa los datos
+			$sql = "SELECT * FROM Misal WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
+			$objConexion->buscar($sql);
+			//Si no encuentra registro la funcion retorna un 0
+			if ($objConexion->buscar($sql) == 0){
 				$sql = "INSERT INTO Misal(DateLiturgia,TextB,Type,SubType,Language) VALUES('$dateLiturgia','$txa','$type','$subtype','$language')";
-				$objConexion->execute($sql);
+				$objConexion->insertar($sql);
+				$objConexion->cerrar();
 				echo "<script>
 				alert('Los datos fueron enviados correctamente a ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 			else{
+				$objConexion->cerrar();
 				echo "<script>
 				alert('El registro ya existe en ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 		break;
 		case 'Rituales OAR':
-			$result = mysql_query("SELECT * FROM Rituales WHERE Day='$calendarDay' AND Month='$calendarMonth' AND Type = '$type'") or die("Problemas al consultar la base de datos".mysql_error());
-			$registros = mysql_num_rows($result);
+			$sql = "SELECT * FROM Rituales WHERE Day='$calendarDay' AND Month='$calendarMonth' AND Type = '$type'";
+			$objConexion->buscar($sql);
 
-			if($registros == 0){//Si no encuentra resultados, ingresa los datos
+			if ($objConexion->buscar($sql) == 0){
 				$sql = "INSERT INTO Rituales(Day,Month,TextB,Type,SubType) VALUES('$calendarDay','$calendarMonth','$txa','$type','$subtype')";
-				$objConexion->execute($sql);
+				$objConexion->insertar($sql);
+				$objConexion->cerrar();
 				echo "<script>
 				alert('Los datos fueron enviados correctamente a ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 			else{
+				$objConexion->cerrar();
 				echo "<script>
 				alert('El registro ya existe en ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 		break;
 		case 'Oraciones':
-			$result = mysql_query("SELECT * FROM Oraciones WHERE Day='$calendarDay' AND Month='$calendarMonth' AND Type = '$type'") or die("Problemas al consultar la base de datos".mysql_error());
-			$registros = mysql_num_rows($result);
+			$sql = "SELECT * FROM Oraciones WHERE Day='$calendarDay' AND Month='$calendarMonth' AND Type = '$type'";
+			$objConexion->buscar($sql);
 
-			if($registros == 0){//Si no encuentra resultados, ingresa los datos
+			if ($objConexion->buscar($sql) == 0){
 				$sql = "INSERT INTO Oraciones(Day,Month,TextB,Type) VALUES('$calendarDay','$calendarMonth','$txa','$type')";
-				$objConexion->execute($sql);
+				$objConexion->insertar($sql);
+				$objConexion->cerrar();
 				echo "<script>
 				alert('Los datos fueron enviados correctamente a ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 			else{
+				$objConexion->cerrar();
 				echo "<script>
 				alert('El registro ya existe en ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 		break;
 		case 'Ritual Sacramentos':
-			$result = mysql_query("SELECT * FROM Ritual_sacramento WHERE Day='$calendarDay' AND Month='$calendarMonth' AND Type = '$type'") or die("Problemas al consultar la base de datos".mysql_error());
-			$registros = mysql_num_rows($result);
+			$sql = "SELECT * FROM Ritual_sacramento WHERE Day='$calendarDay' AND Month='$calendarMonth' AND Type = '$type'";
+			$objConexion->buscar($sql);
 
-			if($registros == 0){//Si no encuentra resultados, ingresa los datos
+			if ($objConexion->buscar($sql) == 0){
 				$sql = "INSERT INTO Ritual_sacramento(Day,Month,TextB,Type) VALUES('$calendarDay','$calendarMonth','$txa','$type')";
-				$objConexion->execute($sql);
+				$objConexion->insertar($sql);
+				$objConexion->cerrar();
 				echo "<script>
 				alert('Los datos fueron enviados correctamente a ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 			else{
+				$objConexion->cerrar();
 				echo "<script>
 				alert('El registro ya existe en ".$type."');
 				window.location='../controlPanel.php';
-				</script>";
-				$objConexion->cerrar();}
+				</script>";}
 		break;
-		
 		default:
+			$objConexion->cerrar();
 			echo "<script>
 			alert('La selección no tuvo exito');
 			window.location='../controlPanel.php';
 			</script>";
-			$objConexion->cerrar();
 			break;}
 ?>

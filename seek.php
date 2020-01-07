@@ -38,10 +38,12 @@
 			</script>";}
 
 	$objConexion = new ConexionDB();
-
-	//conexion();
 	$sql = "SELECT * FROM $oracion WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'"; 
-	$objConexion->contar_filas($sql);
+	if($objConexion->buscar($sql)==1){
+		echo "<script>alert('Registro Encontrado');</script>";}
+	else{
+		$objConexion->cerrar();
+		print("<script>alert('Registro Vacio!');window.location='controlPanel.php';</script>");}
 	
 	?>
 <!DOCTYPE HTML>
