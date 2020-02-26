@@ -63,6 +63,8 @@ function viewComunes(){
 	document.getElementById("divPE").style.display = "none";
 	document.getElementById("divComunes").style.display = "block";}
 
+	
+
 /*function enabledButton(){
 	switch(document.forms[0].brevaryDB.selectedIndex){
 		case 3:
