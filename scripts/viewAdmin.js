@@ -63,7 +63,51 @@ function viewComunes(){
 	document.getElementById("divPE").style.display = "none";
 	document.getElementById("divComunes").style.display = "block";}
 
-	
+//Funciones llamadas en oficiosLecturas.php en la lista desordenada
+function viewOficiosLecturas(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "block";
+	document.getElementById("divLaudes").style.display = "none";
+	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divVisperas").style.display = "none";
+	document.getElementById("divCompletas").style.display = "none";
+}
+
+function viewLaudes(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "none";
+	document.getElementById("divLaudes").style.display = "block";
+	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divVisperas").style.display = "none";
+	document.getElementById("divCompletas").style.display = "none";
+}
+
+function viewHoraIntermedia(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "none";
+	document.getElementById("divLaudes").style.display = "none";
+	document.getElementById("divHI").style.display = "block";
+	document.getElementById("divVisperas").style.display = "none";
+	document.getElementById("divCompletas").style.display = "none";
+}
+
+function viewVisperas(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "none";
+	document.getElementById("divLaudes").style.display = "none";
+	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divVisperas").style.display = "block";
+	document.getElementById("divCompletas").style.display = "none";
+}
+
+function viewCompletas(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "none";
+	document.getElementById("divLaudes").style.display = "none";
+	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divVisperas").style.display = "none";
+	document.getElementById("divCompletas").style.display = "block";
+}
 
 /*function enabledButton(){
 	switch(document.forms[0].brevaryDB.selectedIndex){
