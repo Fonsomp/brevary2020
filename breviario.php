@@ -51,25 +51,25 @@
 											<header>
 												<center><h1>Oficios de Lecturas</h1></center>
 											</header>	
-											<?php //include("conexion/mostrar.php");?>	
+											<?php include("conexion/brevary/mostrar.php");?>	
 										</div>
 										<div class="ocultar" id="divLaudes">
 											<header>
 												<center><h1>Laudes</h1></center>
 											</header>
-											<?php //include("conexion/brevary/mostrarLaudes.php");?>
+											<?php include("conexion/brevary/mostrarLaudes.php");?>
 										</div>
 										<div class="ocultar" id="divHI">
 											<header>
 												<center><h1>Horas Intermedias</h1></center>
 											</header>
-											<?php //include("conexion/brevary/mostrarHI.php");?>
+											<?php include("conexion/brevary/mostrarHI.php");?>
 										</div>
 										<div class="ocultar" id="divVisperas">
 											<header>
 												<center><h1>Visperas</h1></center>
 											</header>
-											<?php //include("conexion/brevary/mostrarVisperas.php");?>
+											<?php include("conexion/brevary/mostrarVisperas.php");?>
 										</div>
 										<div class="ocultar" id="divCompletas">
 											<header>
