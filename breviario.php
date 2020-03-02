@@ -75,7 +75,7 @@
 											<header>
 												<center><h1>Completas</h1></center>
 											</header>
-											<?php //include("conexion/brevary/mostrarCompletas.php");?>
+											<?php include("conexion/brevary/mostrarCompletas.php");?>
 										</div>
 									</div>
 									
