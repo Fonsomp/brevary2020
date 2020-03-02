@@ -9,7 +9,9 @@
 		header("Location:controlPanel.php");
 		die();}
 
-	if($_POST["subir"] == "cargar"){
+
+	echo $_POST["subir"];	
+	if($_POST[subir"] "== "cargar"){
 		$ruta = "docs/".basename($_FILES['archivo']['name']);
 		move_uploaded_file($_FILES['archivo']['tmp_name'],$ruta);
 		echo "<script>
