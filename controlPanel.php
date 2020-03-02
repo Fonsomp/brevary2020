@@ -7,8 +7,7 @@
 	if(isset($_GET["language"])){
 		$_SESSION["language"] = $_GET["language"];
 		header("Location:controlPanel.php");
-		die();
-	}
+		die();}
 
 	if($_POST["subir"] == "cargar"){
 		$ruta = "docs/".basename($_FILES['archivo']['name']);
