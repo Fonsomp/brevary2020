@@ -362,8 +362,9 @@
  							<div class="ocultar" id="upFiles">
 								<header><h1><?php echo $tituloSA; ?> <i class="icon fa-file"></i></h1></header>
 								<form action="controlPanel.php" method="post" enctype="multipart/form-data">
+									<input type="hidden" name="subir" value="cargar">
 									<input type="file" name="archivo" value="archivo"><br>
-									<input type="submit" value="<?php echo $btCargar; ?>" name="subir">
+									<input type="submit" value="<?php echo $btCargar; ?>" name="">
 								</form>
 								<header><h2><?php echo $tituloLA; ?></h2></header>
 								<?php echo listarArchivos('docs/');?>
