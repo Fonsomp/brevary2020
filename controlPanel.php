@@ -331,7 +331,6 @@
 											?>
 										</optgroup>
 										
-										
 										</select>
 									<!--input vacio para capturar el valor de los label del optgroup que envia el codigo jquery-->
 									<input id="tipo" name="tipo" type="hidden" value=" ">
