@@ -9,7 +9,7 @@
 		<title>Breviary</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" /> 
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -59,11 +59,23 @@
 											</header>
 											<?php include("conexion/brevary/mostrarLaudes.php");?>
 										</div>
-										<div class="ocultar" id="divHI">
+										<div class="ocultar" id="divHIT">
 											<header>
-												<center><h1>Horas Intermedias</h1></center>
-											</header>
-											<?php include("conexion/brevary/mostrarHI.php");?>
+												<center><h1>Horas Intermedias (Tercia)</h1></center>
+											</header> 
+											<?php include("conexion/brevary/mostrarHIT.php");?>
+										</div>
+										<div class="ocultar" id="divHIS">
+											<header>
+												<center><h1>Horas Intermedias (Sexta)</h1></center>
+											</header> 
+											<?php include("conexion/brevary/mostrarHIS.php");?>
+										</div>
+										<div class="ocultar" id="divHIN">
+											<header>
+												<center><h1>Horas Intermedias (Nona)</h1></center>
+											</header> 
+											<?php include("conexion/brevary/mostrarHIN.php");?>
 										</div>
 										<div class="ocultar" id="divVisperas">
 											<header>
@@ -105,14 +117,14 @@
 									<header class="major">
 										<h2><?php echo $menu; ?></h2>
 									</header>
-									<ul>
+									<ul class="">
 										<li onclick="viewOficiosLecturas()"><a href="#">Oficios de Lecturas</a></li>
 										<li onclick="viewLaudes()"><a href="#">Laudes</a></li>
-										<li onclick="viewHoraIntermedia()"><a href="#">Hora Intermedia</a>
-											<ul>
-												<li>Tercia</li>
-												<li>Sexta</li>
-												<li>Nona</li>
+										<li class="submenu"><a href="#">Hora Intermedia</a>
+											<ul class="submenu1">
+												<li onclick="viewHoraIntermediaTercia();"><a href="">Tercia</a></li>
+												<li onclick="viewHoraIntermediaSexta();"><a href="">Sexta</a></li>
+												<li onclick="viewHoraIntermediaNona();"><a href="">Nona</a></li>
 											</ul>
 										</li>
 										<li onclick="viewVisperas()"><a href="#">Visperas</a></li>
