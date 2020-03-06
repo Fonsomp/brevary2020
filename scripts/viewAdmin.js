@@ -68,7 +68,9 @@ function viewOficiosLecturas(){
 	document.getElementById("headerC").style.display = "none";
 	document.getElementById("divOficiosLecturas").style.display = "block";
 	document.getElementById("divLaudes").style.display = "none";
-	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divHIT").style.display = "none";
+	document.getElementById("divHIS").style.display = "none";
+	document.getElementById("divHIN").style.display = "none";
 	document.getElementById("divVisperas").style.display = "none";
 	document.getElementById("divCompletas").style.display = "none";
 }
@@ -77,16 +79,42 @@ function viewLaudes(){
 	document.getElementById("headerC").style.display = "none";
 	document.getElementById("divOficiosLecturas").style.display = "none";
 	document.getElementById("divLaudes").style.display = "block";
-	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divHIT").style.display = "none";
+	document.getElementById("divHIS").style.display = "none";
+	document.getElementById("divHIN").style.display = "none";
 	document.getElementById("divVisperas").style.display = "none";
 	document.getElementById("divCompletas").style.display = "none";
 }
 
-function viewHoraIntermedia(){
+function viewHoraIntermediaTercia(){
 	document.getElementById("headerC").style.display = "none";
 	document.getElementById("divOficiosLecturas").style.display = "none";
 	document.getElementById("divLaudes").style.display = "none";
-	document.getElementById("divHI").style.display = "block";
+	document.getElementById("divHIT").style.display = "block";
+	document.getElementById("divHIS").style.display = "none";
+	document.getElementById("divHIN").style.display = "none";
+	document.getElementById("divVisperas").style.display = "none";
+	document.getElementById("divCompletas").style.display = "none";
+}
+
+function viewHoraIntermediaSexta(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "none";
+	document.getElementById("divLaudes").style.display = "none";
+	document.getElementById("divHIT").style.display = "none";
+	document.getElementById("divHIS").style.display = "block";
+	document.getElementById("divHIN").style.display = "none";
+	document.getElementById("divVisperas").style.display = "none";
+	document.getElementById("divCompletas").style.display = "none";
+}
+
+function viewHoraIntermediaNona(){
+	document.getElementById("headerC").style.display = "none";
+	document.getElementById("divOficiosLecturas").style.display = "none";
+	document.getElementById("divLaudes").style.display = "none";
+	document.getElementById("divHIT").style.display = "none";
+	document.getElementById("divHIS").style.display = "none";
+	document.getElementById("divHIN").style.display = "block";
 	document.getElementById("divVisperas").style.display = "none";
 	document.getElementById("divCompletas").style.display = "none";
 }
@@ -95,7 +123,9 @@ function viewVisperas(){
 	document.getElementById("headerC").style.display = "none";
 	document.getElementById("divOficiosLecturas").style.display = "none";
 	document.getElementById("divLaudes").style.display = "none";
-	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divHIT").style.display = "none";
+	document.getElementById("divHIS").style.display = "none";
+	document.getElementById("divHIN").style.display = "none";
 	document.getElementById("divVisperas").style.display = "block";
 	document.getElementById("divCompletas").style.display = "none";
 }
@@ -104,10 +134,14 @@ function viewCompletas(){
 	document.getElementById("headerC").style.display = "none";
 	document.getElementById("divOficiosLecturas").style.display = "none";
 	document.getElementById("divLaudes").style.display = "none";
-	document.getElementById("divHI").style.display = "none";
+	document.getElementById("divHIT").style.display = "none";
+	document.getElementById("divHIS").style.display = "none";
+	document.getElementById("divHIN").style.display = "none";
 	document.getElementById("divVisperas").style.display = "none";
 	document.getElementById("divCompletas").style.display = "block";
 }
+
+
 
 /*function enabledButton(){
 	switch(document.forms[0].brevaryDB.selectedIndex){
