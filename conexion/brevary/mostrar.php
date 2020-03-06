@@ -1,6 +1,6 @@
 <?php
 //session_start();
-require_once("conexionDB.php");
+require_once("conexion/conexionDB.php");
 
 $language = $_SESSION["language"]; 
 $fechaActual = date('Y-m-d');
