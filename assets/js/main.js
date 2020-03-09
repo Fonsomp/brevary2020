@@ -15,6 +15,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.submenu2').on('click', function(e){
+        $('.submenu3').toggle();
+       
+    });
+});
+
 (function($) {
 
 	skel.breakpoints({

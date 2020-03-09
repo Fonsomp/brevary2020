@@ -10,11 +10,11 @@ $txtNotificaciones = $_POST['txtNotificaciones'];//Envia texto del textarea
 $hora = date("G:ia");
 print_r($hora);
 
-$objConexion = new conexionDB();
+$objConexion = new ConexionDB();
 
 if($country != "Seleccione" && $dateNotification != "0000-00-00"){
 	$sql = "INSERT INTO notificaciones(DateN,Notification,Country) VALUES('$dateNotification','$txtNotificaciones','$country')";
-	$objConexion->execute($sql);
+	$objConexion->insertar($sql);
 	echo "<script>AskForWebNotificationPermissions();</script>";
 	echo "<script>
 		alert('Las notificaciones fueron enviadas a la DB');

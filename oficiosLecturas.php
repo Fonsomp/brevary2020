@@ -1,8 +1,6 @@
 <?php
 	session_start();
 	require 'Language/requiereLenguage.php';
-	require 'listFiles.php';
-	clearstatcache();
 ?>
 <!DOCTYPE HTML>
 
@@ -16,6 +14,7 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/normalize.css">
 		<script src="scripts/viewAdmin.js"></script>
+		<!-- <script type="text/javascript" src="assets/js/geolocalizacion.js"></script>-->
 		<script src="js/modernizr-custom.js"></script>	
 		
 	</head>
@@ -45,28 +44,24 @@
 									<div class="content">
 										<div class="" id="contenido">
 											<header>
-												<center><h1><?php echo $tituloH1Header; ?></h1></center>
-											</header>
-											<p><center><img src="images/EscudoAR.png" width="90%" height="90%"></center></p>	
+												<center><h1>Oficios de Lecturas</h1></center>
+											</header>	
 										</div>
-										<div class="ocultar" id="verArchivos">
-											<header><h1>Biblioteca de Archivos <i class="icon fa-file"></i></h1></header>
-											<header><h3>Lista de Archivos</h3></header>
-											<?php echo listarArchivos('docs/');?>
-			 							</div>
-			 							<div class="ocultar" id="verNotificaciones">
-			 								<header><h1>Nuevas Notificaciones <i class="icon fa-comment"></i></h1></header>
-											<?php include("conexion/mostrarNotificaciones.php");?>
+										<div class="" id="divOficiosLecturas">
+											<?php include("conexion/mostrar.php");?>
 										</div>
-										<div class="ocultar" id="login">
-										<center>	
-											<form action="conexion/login.php" method="post" id="formlg">
-												<center><span class="icon fa fa-user fa-5x"></span></center>
-												<p>Username<input type="text" placeholder="User" name="userlg" required/></p>
-												<p>Password<input type="password" placeholder="Password" name="passwordlg" required/></p>
-												<p><center><input type="submit" value="Ingresar"/></input></center>
-											</form>
-										</center>
+										<!-- terminar mostrar todos los apartados del breviario -->
+										<div class="ocultar" id="divLaudes">
+											<?php include("conexion/mostrarLaudes.php");?>
+										</div>
+										<div class="ocultar" id="divHI">
+											<?php include("conexion/mostrarHI.php");?>
+										</div>
+										<div class="ocultar" id="divVisperas">
+											<?php include("conexion/mostrarVisperas.php");?>
+										</div>
+										<div class="ocultar" id="divCompletas">
+											<?php include("conexion/mostrarCompletas.php");?>
 										</div>
 									</div>
 								</section>
@@ -76,16 +71,16 @@
 										<center><span>Diseño y Desarrollo por <img src="images/Logo.png" width="4%" height="4%"></span></center>
 									</footer>
 								</div>
-										
 						</div>
 					</div>
+
 				<!-- Sidebar -->
 					<div id="sidebar" ng-controller="mainCtrl">
 						<div class="inner"  ng-controller="mainCtrl">
 
 							<!-- Search -->
 								<section id="search" class="alt">
-									<form method=" " action="#">
+									<form method="post" action="#">
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
@@ -96,12 +91,18 @@
 										<h2><?php echo $menu; ?></h2>
 									</header>
 									<ul>
-										<li><a href="liturgia.php"><?php echo $btLitugias; ?></a></li>
-										<li><a href="#"><?php echo $btEjercicios; ?></a></li>
-										<li onclick="viewFiles()"><a href="#"><?php echo $btbiblioteca; ?></a></li>
-										<li onclick="viewNotifications();"><a href="#"><?php echo $btnotificaciones; ?></a></li>
-										<li onclick="viewLogin();"><a href=""><?php echo $btIngresar; ?></a></li>
-										<li onclick=""><a href="">Acerca de</a></li>
+										<li onclick="viewOficiosLecturas()"><a href="#">Oficios de Lecturas</a></li>
+										<li onclick="viewLaudes()"><a href="#">Laudes</a></li>
+										<li onclick="viewHoraIntermedia()"><a href="#">Hora Intermedia</a>
+											<ul>
+												<li>Tercia</li>
+												<li>Sexta</li>
+												<li>Nona</li>
+											</ul>
+										</li>
+										<li onclick="viewVisperas()"><a href="#">Visperas</a></li>
+										<li onclick="viewCompletas()"><a href="#">Completas</a></li>
+										<li><a href="index.php"><?php echo $btInicio; ?></a></li>
 									</ul>
 								</nav>						
 

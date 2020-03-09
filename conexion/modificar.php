@@ -30,55 +30,55 @@ if($_POST['tipoS'] == "Tercera Parte"){
 if($_POST['tipoS'] == "Apéndice Musical"){
 	$subtype = $_POST['AM'];}
 
-$objConexion = new conexionDB();
+$objConexion = new ConexionDB();
 
 switch ($oracion) {
 	case 'Breviario':
-			$sql = mysql_query("UPDATE Breviario set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
-			$objConexion->execute($sql);
-			echo "<script>alert('Los datos se actualizaron correctamente en ".$type."');
-			window.location='../controlPanel.php';
-			</script>";
-			$objConexion->cerrar();
-		break;	
+		$sql = "UPDATE Breviario set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
+		$objConexion->insertar($sql);
+		$objConexion->cerrar();
+		echo "<script>alert('Los datos se actualizaron correctamente en ".$type."');
+		window.location='../controlPanel.php';
+		</script>";	
+	break;	
 	case 'Misal':
-			$sql = mysql_query("UPDATE Misal set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
-			$objConexion->execute($sql);
+			$sql = "UPDATE Misal set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
+			$objConexion->insertar($sql);
+			$objConexion->cerrar();
 			echo "<script>alert('Los datos se actualizaron correctamente en ".$type."');
 			window.location='../controlPanel.php';
 			</script>";
+	break;
+	case 'Rituales OAR':
+			$sql = "UPDATE Rituales set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
+			$objConexion->insertar($sql);
 			$objConexion->cerrar();
-		break;
-		case 'Rituales OAR':
-			$sql = mysql_query("UPDATE Rituales set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
-			$objConexion->execute($sql);
 			echo "<script>alert('Los datos se actualizaron correctamente en ".$type."');
 			window.location='../controlPanel.php';
 			</script>";
+	break;
+	case 'Oraciones':
+			$sql = "UPDATE Oraciones set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
+			$objConexion->insertar($sql);
 			$objConexion->cerrar();
-		break;
-		case 'Oraciones':
-			$sql = mysql_query("UPDATE Oraciones set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
-			$objConexion->execute($sql);
 			echo "<script>alert('Los datos se actualizaron correctamente en ".$type."');
 			window.location='../controlPanel.php';
-			</script>";
-			$objConexion->cerrar();
-		break;
-		case 'Ritual Sacramentos':
-			$sql = mysql_query("UPDATE Ritual_sacramento set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'") or die("Problemas al consultar la base de datos".mysql_error());
+			</script>";	
+	break;
+	case 'Ritual Sacramentos':
+			$sql = "UPDATE Ritual_sacramento set TextB='$txa' WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'";
 			$objConexion->execute($sql);
+			$objConexion->cerrar();
 			echo "<script>alert('Los datos se actualizaron correctamente en ".$type."');
 			window.location='../controlPanel.php';
-			</script>";
-			$objConexion->cerrar();
-		break;
-		default:
+			</script>";			
+	break;
+	default:
 			echo "<script>
 			alert('La selección no tuvo exito');
 			window.location='../controlPanel.php';
 			</script>";
-			break;
+	break;
 }
 
 ?>
