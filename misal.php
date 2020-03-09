@@ -83,6 +83,12 @@
 												</header>
 												<?php include("conexion/misal/ODM/mostrarB.php");?>
 										</div>
+										<div class="ocultar" id="divOLD">
+												<header>
+													<center><h1>ORACIÓN Y LECTURAS DEL DÍA</h1></center>
+												</header>
+												<?php include("conexion/misal/mostrarOLD.php");?>
+										</div>
 										<div class="ocultar" id="divPrefacio">
 											<header>
 												<center><h1>SELECCIONE PREFACIO</h1></center>
@@ -177,31 +183,79 @@
 												<center><input type="submit" id="btnMostar" name="mostrar" value="mostrar"></center>
 											</form>
 										</div>
-										<div class="ocultar" id="divPE">
-											<header>
-												<center><h1>SELECCIONE PLEGARIA EUCARÍSTICA</h1></center>
-											</header>
-											<form action="viewPlegaria.php" method="post">
-												<select class="" id="PE" name="PE">
-													<option>Seleccione</option>
-													<optgroup label="Plegaria Eucarística" >
-															<option>Plegaria Eucarística I</option>
-															<option>Plegaria Eucarística II</option>
-															<option>Plegaria Eucarística III</option>
-															<option>Plegaria Eucarística IV</option>
-															<option>Plegaria Eucarística V/a</option>
-															<option>Plegaria Eucarística V/b</option>
-															<option>Plegaria Eucarística V/c</option>
-															<option>Plegaria Eucarística V/d</option>
-															<option>Plegaria Eucarística sobre la reconciliación I</option>
-															<option>Plegaria Eucarística sobre la reconciliación II</option>
-															<option>Plegaria Eucarística para Niños I</option>
-															<option>Plegaria Eucarística para Niños II</option>
-													</optgroup>
-												</select><br>
-												<center><input type="submit" id="btnMostar" name="mostrar" value="mostrar"></center>
-											</form>
+										<div class="ocultar" id="divPE_I">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA I</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_I.php");?>
 										</div>
+										<div class="ocultar" id="divPE_II">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA II</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_II.php");?>
+										</div>
+										<div class="ocultar" id="divPE_III">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA III</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_III.php");?>
+										</div>
+										<div class="ocultar" id="divPE_IV">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA IV</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_IV.php");?>
+										</div>
+										<div class="ocultar" id="divPE_VA">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA V/a</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_VA.php");?>
+										</div>
+										<div class="ocultar" id="divPE_VB">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA V/b</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_VB.php");?>
+										</div>
+										<div class="ocultar" id="divPE_VC">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA V/c</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_VC.php");?>
+										</div>
+										<div class="ocultar" id="divPE_VD">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA V/d</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_VD.php");?>
+										</div>
+										<div class="ocultar" id="divPE_SRI">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA SOBRE LA RECONCILIACIÓN I</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_SRI.php");?>
+										</div>
+										<div class="ocultar" id="divPE_SRII">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA SOBRE LA RECONCILIACIÓN II</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_SRII.php");?>
+										</div>
+										<div class="ocultar" id="divPE_NI">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA PARA LOS NIÑOS I</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_NI.php");?>
+										</div>
+										<div class="ocultar" id="divPE_NII">
+												<header>
+													<center><h1>PLEGARIA EUCARÍSTICA PARA LOS NIÑOS II</h1></center>
+												</header>
+												<?php include("conexion/misal/PE/mostrarPE_NII.php");?>
+										</div>
+
 										<div class="ocultar" id="divComunes">
 											<header>
 												<center><h1>SELECCIONE COMUNES</h1></center>
@@ -259,22 +313,22 @@
 												<li onclick="viewODM_B()"><a href="#">Bendición</a></li>
 											</ul>
 										</li>
-										<li><a href="viewOLD.php">Oración y lecturas del día</a></li>
+										<li onclick="viewOLD()"><a href="">Oración y lecturas del día</a></li>
 										<li onclick="viewPrefacio()"><a href="">Prefacio</a></li>
 										<li class="submenu2"><a href="">Plegaria Eucarística</a>
 											<ul class="submenu3">
-												<li onclick=""><a href="#">Plegaria Eucarística I</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística II</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística III</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística IV</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística V/a</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística V/b</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística V/c</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística V/d</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística sobre la reconciliación I</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística sobre la reconciliación II</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística para Niños I</a></li>
-												<li onclick=""><a href="#">Plegaria Eucarística para Niños II</a></li>
+												<li onclick="viewPE_I()"><a href="#">Plegaria Eucarística I</a></li>
+												<li onclick="viewPE_II()"><a href="#">Plegaria Eucarística II</a></li>
+												<li onclick="viewPE_III()"><a href="#">Plegaria Eucarística III</a></li>
+												<li onclick="viewPE_IV()"><a href="#">Plegaria Eucarística IV</a></li>
+												<li onclick="viewPE_VA()"><a href="#">Plegaria Eucarística V/a</a></li>
+												<li onclick="viewPE_VB()"><a href="#">Plegaria Eucarística V/b</a></li>
+												<li onclick="viewPE_VC()"><a href="#">Plegaria Eucarística V/c</a></li>
+												<li onclick="viewPE_VD()"><a href="#">Plegaria Eucarística V/d</a></li>
+												<li onclick="viewPE_SRI()"><a href="#">Plegaria Eucarística sobre la reconciliación I</a></li>
+												<li onclick="viewPE_SRII()"><a href="#">Plegaria Eucarística sobre la reconciliación II</a></li>
+												<li onclick="viewPE_NI()"><a href="#">Plegaria Eucarística para Niños I</a></li>
+												<li onclick="viewPE_NII()"><a href="#">Plegaria Eucarística para Niños II</a></li>
 											</ul>
 										</li>
 										<li onclick="viewComunes()"><a href="">Comunes</a></li>

@@ -43,8 +43,20 @@ function viewODM_RI(){
 	document.getElementById("divRC").style.display = "none";
 	document.getElementById("divRCS").style.display = "none";
 	document.getElementById("divBen").style.display = "none";
+	document.getElementById("divOLD").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";
 	document.getElementById("divComunes").style.display = "none";}
 
 function viewODM_C(){
@@ -55,8 +67,20 @@ function viewODM_C(){
 	document.getElementById("divRC").style.display = "none";
 	document.getElementById("divRCS").style.display = "none";
 	document.getElementById("divBen").style.display = "none";
+	document.getElementById("divOLD").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";;
 	document.getElementById("divComunes").style.display = "none";}
 
 function viewODM_LE(){
@@ -67,8 +91,20 @@ function viewODM_LE(){
 	document.getElementById("divRC").style.display = "none";
 	document.getElementById("divRCS").style.display = "none";
 	document.getElementById("divBen").style.display = "none";
+	document.getElementById("divOLD").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";
 	document.getElementById("divComunes").style.display = "none";}
 
 function viewODM_RC(){
@@ -79,8 +115,20 @@ function viewODM_RC(){
 	document.getElementById("divRC").style.display = "block";
 	document.getElementById("divRCS").style.display = "none";
 	document.getElementById("divBen").style.display = "none";
+	document.getElementById("divOLD").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";
 	document.getElementById("divComunes").style.display = "none";}
 
 function viewODM_RCS(){
@@ -91,8 +139,20 @@ function viewODM_RCS(){
 	document.getElementById("divRC").style.display = "none";
 	document.getElementById("divRCS").style.display = "block";
 	document.getElementById("divBen").style.display = "none";
+	document.getElementById("divOLD").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";
 	document.getElementById("divComunes").style.display = "none";}
 
 function viewODM_B(){
@@ -103,23 +163,340 @@ function viewODM_B(){
 	document.getElementById("divRC").style.display = "none";
 	document.getElementById("divRCS").style.display = "none";
 	document.getElementById("divBen").style.display = "block";
+	document.getElementById("divOLD").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";
 	document.getElementById("divComunes").style.display = "none";}
 
-function viewPrefacio(){
+function viewOLD(){
+	document.getElementById("divIntro").style.display = "none";
+	document.getElementById("divRI").style.display = "none";
+	document.getElementById("divCredo").style.display = "none";
+	document.getElementById("divLE").style.display = "none";
+	document.getElementById("divRC").style.display = "none";
+	document.getElementById("divRCS").style.display = "none";
+	document.getElementById("divBen").style.display = "none";
+	document.getElementById("divOLD").style.display = "block";
+	document.getElementById("divPrefacio").style.display = "none";
+	document.getElementById("divPE_I").style.display = "none";
+	document.getElementById("divPE_II").style.display = "none";
+	document.getElementById("divPE_III").style.display = "none";
+	document.getElementById("divPE_IV").style.display = "none";
+	document.getElementById("divPE_VA").style.display = "none";
+	document.getElementById("divPE_VB").style.display = "none";
+	document.getElementById("divPE_VC").style.display = "none";
+	document.getElementById("divPE_VD").style.display = "none";
+	document.getElementById("divPE_SRI").style.display = "none";
+	document.getElementById("divPE_SRII").style.display = "none";
+	document.getElementById("divPE_NI").style.display = "none";
+	document.getElementById("divPE_NII").style.display = "none";
+	document.getElementById("divComunes").style.display = "none";}
+
+	function viewPrefacio(){
 	//document.getElementById("divIntro").style.display = "none";
 	document.getElementById("divRI").style.display = "none";
 	document.getElementById("divPrefacio").style.display = "block";
 	document.getElementById("divPE").style.display = "none";
 	document.getElementById("divComunes").style.display = "none";}
 
-function viewPlegaria(){
-	//document.getElementById("divIntro").style.display = "none";
-	document.getElementById("divRI").style.display = "none";
-	document.getElementById("divPrefacio").style.display = "none";
-	document.getElementById("divPE").style.display = "block";
-	document.getElementById("divComunes").style.display = "none";}
+	function viewPE_I(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "block";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_II(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "block";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_III(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "block";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_IV(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "block";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+		
+function viewPE_VA(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "block";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+		
+function viewPE_VB(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "block";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+		
+function viewPE_VC(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "block";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_VD(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "block";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_SRI(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "block";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_SRII(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "block";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_NI(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "block";
+		document.getElementById("divPE_NII").style.display = "none";
+		document.getElementById("divComunes").style.display = "none";}
+
+function viewPE_NII(){
+		document.getElementById("divIntro").style.display = "none";
+		document.getElementById("divRI").style.display = "none";
+		document.getElementById("divCredo").style.display = "none";
+		document.getElementById("divLE").style.display = "none";
+		document.getElementById("divRC").style.display = "none";
+		document.getElementById("divRCS").style.display = "none";
+		document.getElementById("divBen").style.display = "none";
+		document.getElementById("divOLD").style.display = "none";
+		document.getElementById("divPrefacio").style.display = "none";
+		document.getElementById("divPE_I").style.display = "none";
+		document.getElementById("divPE_II").style.display = "none";
+		document.getElementById("divPE_III").style.display = "none";
+		document.getElementById("divPE_IV").style.display = "none";
+		document.getElementById("divPE_VA").style.display = "none";
+		document.getElementById("divPE_VB").style.display = "none";
+		document.getElementById("divPE_VC").style.display = "none";
+		document.getElementById("divPE_VD").style.display = "none";
+		document.getElementById("divPE_SRI").style.display = "none";
+		document.getElementById("divPE_SRII").style.display = "none";
+		document.getElementById("divPE_NI").style.display = "none";
+		document.getElementById("divPE_NII").style.display = "block";
+		document.getElementById("divComunes").style.display = "none";}
 
 function viewComunes(){
 	//document.getElementById("divIntro").style.display = "none";
