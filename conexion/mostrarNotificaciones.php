@@ -9,9 +9,9 @@ echo "<h4>Fecha de notificaciones: ".$fechaLocal."</h4>";
 $objConexion = new ConexionDB();
 
 //Sentencia para realizar consulta
-$sql = "SELECT * FROM notificaciones WHERE DateN='$fechaLocal'";
+/*$sql = "SELECT * FROM notificaciones WHERE DateN='$fechaLocal'";
 $rows = $objConexion->consul_noti($sql);
-/*foreach ($rows as $value) {
+foreach ($rows as $value) {
     echo "<ul><li>".$value['Notification']."</li></ul>";
 }*/
 
