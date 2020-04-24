@@ -3,6 +3,7 @@
 	require 'Language/requiereLenguage.php';
 	require 'listFiles.php';
 	clearstatcache();
+	
 ?>
 <!DOCTYPE HTML>
 
@@ -20,7 +21,6 @@
 		
 	</head>
 	<body ng-controller="mainCtrl">
-
 		<!-- Wrapper -->
 			<div id="wrapper" ng-controller="mainCtrl" >
 
@@ -97,7 +97,7 @@
 									</header>
 									<ul>
 										<li><a href="liturgia.php"><?php echo $btLitugias; ?></a></li>
-										<li><a href="#"><?php echo $btEjercicios; ?></a></li>
+										<!--<li><a href="#"><?//php echo $btEjercicios; ?></a></li>-->
 										<li onclick="viewFiles()"><a href="#"><?php echo $btbiblioteca; ?></a></li>
 										<li onclick="viewNotifications();"><a href="#"><?php echo $btnotificaciones; ?></a></li>
 										<li onclick="viewLogin();"><a href=""><?php echo $btIngresar; ?></a></li>
@@ -133,7 +133,7 @@
 			<script type="text/javascript" src="scripts/viewAdmin.js"></script>
 			<script src="scripts/gps.js"></script>
 			
-			<script >
+			<script>
 			(function(){
 				var app = angular.module('App',[ ]);
 				app.controller('mainCtrl', ['$scope', function($scope){}]);
