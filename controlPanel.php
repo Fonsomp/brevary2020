@@ -101,7 +101,7 @@
 									<textarea id="txt-content" name="txtLiturgias"></textarea><br>
 									<input type="submit" id="btnEnviar" name="guardar" value="<?php echo $btEnviar; ?>" disabled>
 									<input type="submit" id="btnBuscar" onclick="this.form.action='seek.php'" name="buscar" value="<?php echo $btBuscar; ?>" disabled>
-									<input type="date" id="dateL" name="dateLiturgia" disabled="true">
+									<input type="date" id="dateL" name="dateLiturgia" disabled="true" onclick="activatedButtons()"/>
 
 									<select class="ocultar" id="HI" name="HI">
 										<option>Seleccion</option>
@@ -286,7 +286,7 @@
 										</optgroup>
 									</select>
 
-									<select name="brevaryDB" id="type" onchange="viewSelect()">
+									<select name="brevaryDB" id="type" onchange="activatedDataPicker()">
 										<option>Seleccione</option>
 										<optgroup label="Breviario">
 											<?php
@@ -384,7 +384,7 @@
 				<div class="inner"  ng-controller="mainCtrl">
 				<!-- Search -->
 					<section id="search" class="alt">
-						<form method="post" action="#">
+						<form method=" " action="#">
 							<input type="text" name="query" id="query" placeholder="Search" />
 						</form>
 					</section>
@@ -393,7 +393,7 @@
 						<header class="major">
 							<h2><?php echo $menu; ?></h2>
 						</header>
-						<ul >
+						<ul>
 							<li onclick="viewEditLiturgias()"><a href=""><?php echo $btLitugias; ?></a></li>
 							<li onclick="viewEditNotifications()"><a href=""><?php echo $btnotificaciones; ?></a></li>
 							<li onclick="viewUpFiles()"><a href=""><?php echo $btSubirArchivos; ?></a></li>
@@ -417,8 +417,7 @@
 
 						</div>
 					</div>
-
-			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/skel.min.js"></script>
