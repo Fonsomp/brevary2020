@@ -45,7 +45,7 @@
 									<div class="content">
 										<div class="" id="contenido">
 											<header>
-												<center><h1><?php echo $tituloH1Header; ?></h1></center>
+												<center><h1><?php echo $tituloH1Header; echo "jlkjl"; ?></h1></center>
 											</header>
 											<p><center><img src="images/EscudoAR.png" width="90%" height="90%"></center></p>	
 										</div>
