@@ -56,7 +56,7 @@
 			 							</div>
 			 							<div class="ocultar" id="verNotificaciones">
 			 								<header><h1>Nuevas Notificaciones <i class="icon fa-comment"></i></h1></header>
-											<?php //include("conexion/mostrarNotificaciones.php");?>
+											<?php include("conexion/mostrarNotificaciones.php");?>
 										</div>
 										<div class="ocultar" id="login">
 										<center>	
