@@ -56,7 +56,6 @@
 		<script type="text/javascript" src="assets/js/jquery-1.12.0.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assets/js/editor.js"></script>
-
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="assets/css/normalize.css"/>
