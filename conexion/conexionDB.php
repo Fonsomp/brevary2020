@@ -57,13 +57,13 @@ class ConexionDB{
 		$result = $this->con->query($sql) or die($this->con->error);
 	}
 
-	public function consul_noti($sql){
+	/*public function consul_noti($sql){
 		$result = $this->con->query($sql) or die($this->con->error);
 		//Si la consulta es exitosa regresa un array asociativo
 		if($result)
 			return $result->fetch_all(MYSQLI_ASSOC);	
         return false;
-	}
+	}*/
 
 	public function cerrar() {
 		$this->con->close();
