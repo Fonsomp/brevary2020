@@ -1,16 +1,34 @@
 <?php
 	session_start();
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+    error_reporting(E_ERROR | E_WARNING | E_PARSE);
+    require_once("conexion/conexionDB.php");
 	require 'Language/requiereLenguage.php';
 	require 'listFiles.php';
 
-	if(isset($_GET["language"])){
-		$_SESSION["language"] = $_GET["language"];
-		header("Location:controlPanel.php");
-		die();}
+	$dateLiturgia = $_POST['dateLiturgia'];
+	$type = $_POST['brevaryDB'];//Envia a la base datos de acuerdo a la oracion que corresponda
+	$oracion = $_POST['tipo'];//Menu principal
+	$language = $_SESSION["language"]; 
 
-
-	echo $_POST["subir"];	
+	if($_POST['tipoS'] == "Hora Intermedia"){
+		$subtype = $_POST['HI'];}
+	if($_POST['tipoS'] == "Prefacio"){
+		$subtype = $_POST['Pre'];}
+	if($_POST['tipoS'] == "Ordinario de la Misa"){
+		$subtype = $_POST['ODM'];}
+	if($_POST['tipoS'] == "Plegaria Eucarística"){
+		$subtype = $_POST['PE'];}
+	if($_POST['tipoS'] == "Comunes"){
+		$subtype = $_POST['Co'];}
+	if($_POST['tipoS'] == "Primera Parte: Preces y Celebraciones de la Comunidad"){
+		$subtype = $_POST['PPPCC'];}
+	if($_POST['tipoS'] == "Segunda Parte: Ritual de la profesión religiosa"){
+		$subtype = $_POST['SPRPR'];}
+	if($_POST['tipoS'] == "Tercera Parte"){
+		$subtype = $_POST['TP'];}
+	if($_POST['tipoS'] == "Apéndice Musical"){
+		$subtype = $_POST['AM'];}
+	
 	if($_POST["subir"] == "cargar"){
 		$ruta = "docs/".basename($_FILES['archivo']['name']);
 		move_uploaded_file($_FILES['archivo']['tmp_name'],$ruta);
@@ -18,7 +36,16 @@
 			alert('El archivo se subio correctamente');
 			window.location='controlPanel.php';
 			</script>";}
-?>
+
+	$objConexion = new ConexionDB();
+	$sql = "SELECT * FROM $oracion WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'"; 
+	if($objConexion->buscar($sql)==1){
+		echo "<script>alert('Registro Encontrado');</script>";}
+	else{
+		$objConexion->cerrar();
+		print("<script>alert('Registro Vacio!');window.location='controlPanel.php';</script>");}
+	
+	?>
 <!DOCTYPE HTML>
 
 <html ng-app="App" lang="es">
@@ -42,7 +69,16 @@
 			$('#txt-content').Editor();
 			$('#notificaciones').Editor();
 
-			$('#txt-content').Editor('setText', ['<p style="color:red;">Borre esta línea</p>']);
+			$('#txt-content').Editor('setText', ['<?php 
+				/*$result = mysql_query("SELECT TextB FROM $oracion WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND Language = '$language'");
+				while ($reg = mysql_fetch_array($result)) {echo $reg['TextB']; }*/
+				
+				
+				$sql = "SELECT TextB FROM $oracion WHERE DateLiturgia='$dateLiturgia' AND Type = '$type' AND SubType = '$subtype' AND Language = '$language'"; 
+				$resultado = $objConexion->consulta($sql);
+				echo $resultado['TextB'];
+				?>'
+			]);
 
 			$('#notificaciones').Editor('setText', ['<p style="color:red;">Borre esta línea</p>']);
 
@@ -66,11 +102,7 @@
 				$('#frm-test').submit();				
 			});
 
-			$('#btn-notificaciones').click(function(e){
-				e.preventDefault();
-				$('#notificaciones').text($('#notificaciones').Editor('getText'));
-				$('#frmNotification').submit();				
-			});
+	
 		});	
 		</script>
 	</head>
@@ -97,10 +129,9 @@
 						<div class="content">
  							<div class="" id="liturgias">
  								<header><h1><?php echo $tituloH1HeaderCP; ?> <i class="icon fa-book"></i></h1></header>
-								<form action="conexion/insertar.php" method="post" id="frm-test" enctype="multipart/form-data" name="form1">
+								<form action="conexion/modificar.php" method="post" id="frm-test" enctype="multipart/form-data" name="form1">
 									<textarea id="txt-content" name="txtLiturgias"></textarea><br>
 									<input type="submit" id="btnEnviar" name="guardar" value="<?php echo $btEnviar; ?>" disabled>
-									<input type="submit" id="btnBuscar" onclick="this.form.action='seek3.php'" name="buscar" value="<?php echo $btBuscar; ?>" disabled>
 									<input type="date" id="dateL" name="dateLiturgia" disabled="true" onclick="activatedButtons()"/>
 
 									<select class="ocultar" id="HI" name="HI">
@@ -404,7 +435,7 @@
 							<!-- Section -->
 							<section>
 									<ul class="contact">
-										<li><img src="images/EscudoAR.png"></li>
+										<li><!--<img src="images/EscudoAR.png">--></li>
 										<li onclick="gps();" class="fa-map-marker" id="geolocation-test"><a href=""><?php echo $ubicacion; ?></a><span id="flag"></span></li>
 										<!--<li id="flag"></li>-->
 									</ul>

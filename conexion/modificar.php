@@ -1,8 +1,8 @@
 <?php
 session_start();
 require_once("conexionDB.php");
-header("Content-Type: text/html;charset=utf-8"); 
-mysql_query("SET NAMES 'utf8'");
+//header("Content-Type: text/html;charset=utf-8"); 
+//mysql_query("SET NAMES 'utf8'");
  
 $dateLiturgia = $_POST['dateLiturgia'];
 $txa = $_POST['txtLiturgias'];//Envia texto del textarea
