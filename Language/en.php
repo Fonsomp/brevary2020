@@ -20,6 +20,7 @@ Version 2011 A Last revision: 09-01-2011";
 	/////////controlPanel.php///////
 	$tituloH1HeaderCP = "Enter Liturgies";
 	$btEnviar = "Submit";
+	$btModificar = "Modify";
 	$btBuscar = "Search for";
 	$tituloNotificacion = "Create New Notification";
 	$tituloSA = "Upload files";

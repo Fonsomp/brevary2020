@@ -15,10 +15,12 @@
 	$btIngresar = "Ingresar";
 	$ubicacion = "Usted se encuentra ubicado en:&nbsp;";
 
+
 	/////////controlPanel.php///////
 	$tituloH1HeaderCP = "Ingresar Liturgias";
 	$btEnviar = "Enviar";
 	$btBuscar = "Buscar";
+	$btModificar = "Modificar";
 	$tituloNotificacion = "Crear Nueva Notificación";
 	$tituloSA = "Subir Archivos";
 	$btCargar = "Cargar";

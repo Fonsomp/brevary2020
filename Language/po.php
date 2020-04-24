@@ -22,6 +22,7 @@ Versão 2011 A Última revisão: 09-01-2011";
 	$tituloH1HeaderCP = "Entre nas liturgias";
 	$btEnviar = "Enviar";
 	$btBuscar = "Pesquisar";
+	$btModificar = "Modificar;
 	$tituloNotificacion = "Criar nova notificação";
 	$tituloSA = "Upload de arquivos";
 	$btCargar = "Upload";

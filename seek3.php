@@ -128,10 +128,10 @@
 					<section id="banner">
 						<div class="content">
  							<div class="" id="liturgias">
- 								<header><h1><?php echo $tituloH1HeaderCP; ?> <i class="icon fa-book"></i></h1></header>
+                                <header><h1>Modificar Registro <span><?php echo $type;?></span><i class="icon fa-book"></i></h1></header>
 								<form action="conexion/modificar.php" method="post" id="frm-test" enctype="multipart/form-data" name="form1">
 									<textarea id="txt-content" name="txtLiturgias"></textarea><br>
-									<input type="submit" id="btnEnviar" name="guardar" value="<?php echo $btEnviar; ?>" disabled>
+									<input type="submit" id="btnEnviar" name="guardar" value="<?php echo $btModificar; ?>" disabled>
 									<input type="date" id="dateL" name="dateLiturgia" disabled="true" onclick="activatedButtons()"/>
 
 									<select class="ocultar" id="HI" name="HI">
@@ -425,7 +425,7 @@
 							<h2><?php echo $menu; ?></h2>
 						</header>
 						<ul>
-							<li onclick="viewEditLiturgias()"><a href=""><?php echo $btLitugias; ?></a></li>
+							<li ><a href="controlPanel.php"><?php echo $btLitugias; ?></a></li>
 							<li onclick="viewEditNotifications()"><a href=""><?php echo $btnotificaciones; ?></a></li>
 							<li onclick="viewUpFiles()"><a href=""><?php echo $btSubirArchivos; ?></a></li>
 							<li><a href="index.php"><?php echo $btSalir; ?></a></li>
